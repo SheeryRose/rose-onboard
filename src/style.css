@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 48px;
+  width: 100%;
+  max-width: 580px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.card h1 {
+  color: #be185d;
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.step-label {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+}
+
+.step h2 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.field input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #be185d;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.btn-group button {
+  padding: 10px 22px;
+  background: #be185d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-group button:hover {
+  background: #9d174d;
+}
+
+.review-box {
+  background: #fff0f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.review-box p {
+  font-size: 0.9rem;
+  padding: 6px 0;
+  border-bottom: 1px solid #fce7f3;
+  color: #374151;
+}
+
+.review-box p:last-child {
+  border-bottom: none;
+}
