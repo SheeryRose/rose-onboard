@@ -2,6 +2,7 @@ import { useState } from 'react'
 import PersonalInfo from './steps/PersonalInfo'
 import AccountDetails from './steps/AccountDetails'
 import Review from './steps/Review'
+import ProgressBar from './components/ProgressBar'
 
 export default function App() {
   const [step, setStep] = useState(1)
@@ -28,6 +29,7 @@ export default function App() {
   return (
     <div className="wrapper">
       <div className="card">
+        <ProgressBar step={step} />
         <h1>Rose Onboard</h1>
         <p className="step-label">Step {step} of 3</p>
 
