@@ -1,7 +1,21 @@
+import { useState } from 'react'
+
 export default function Review({ formData, prevStep }) {
+  const [submitted, setSubmitted] = useState(false)
+
   function handleSubmit() {
     console.log('Form submitted:', formData)
-    alert('Form submitted successfully!')
+    setSubmitted(true)
+  }
+
+  if (submitted) {
+    return (
+      <div className="success">
+        <div className="success-icon">✓</div>
+        <h2>You're all set!</h2>
+        <p>Welcome, {formData.firstName}Your account has been created.</p>
+      </div>
+    )
   }
 
   return (
