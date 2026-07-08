@@ -13,7 +13,7 @@ export default function Review({ formData, prevStep }) {
       <div className="success">
         <div className="success-icon">✓</div>
         <h2>You're all set!</h2>
-        <p>Welcome, {formData.firstName}Your account has been created.</p>
+        <p>Welcome, {formData.firstName} Your account has been created.</p>
       </div>
     )
   }
